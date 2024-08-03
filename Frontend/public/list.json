@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "React Book",
+    "title": "A JavaScript library for building user interfaces",
+    "price": 0.0,
+    "category": "Free",
+    "image": "https://img.freepik.com/free-photo/assortment-with-books-pink-background_23-2148898318.jpg?t=st=1722616964~exp=1722620564~hmac=edb97aaa4aef0737ad61556bbbd6507bd03bd5ab7fa0f10972aa08e1a1236612&w=360"
+  },
+  {
+    "id": 2,
+    "name": "Node JS Book",
+    "title": "A JavaScript library for building user interfaces",
+    "price": 0.0,
+    "category": "Free",
+    "image": "https://img.freepik.com/free-photo/assortment-with-books-pink-background_23-2148898318.jpg?t=st=1722616964~exp=1722620564~hmac=edb97aaa4aef0737ad61556bbbd6507bd03bd5ab7fa0f10972aa08e1a1236612&w=360"
+  },
+  {
+    "id": 3,
+    "name": "Laravel Book",
+    "title": "A JavaScript library for building user interfaces",
+    "price": 0.0,
+    "category": "Free",
+    "image": "https://img.freepik.com/free-photo/assortment-with-books-pink-background_23-2148898318.jpg?t=st=1722616964~exp=1722620564~hmac=edb97aaa4aef0737ad61556bbbd6507bd03bd5ab7fa0f10972aa08e1a1236612&w=360"
+  },
+  {
+    "id": 4,
+    "name": "Python Book",
+    "title": "A JavaScript library for building user interfaces",
+    "price": 0.0,
+    "category": "paid",
+    "image": "https://img.freepik.com/free-photo/assortment-with-books-pink-background_23-2148898318.jpg?t=st=1722616964~exp=1722620564~hmac=edb97aaa4aef0737ad61556bbbd6507bd03bd5ab7fa0f10972aa08e1a1236612&w=360"
+  },
+  {
+    "id": 5,
+    "name": "Java Book",
+    "title": "A JavaScript library for building user interfaces",
+    "price": 0.0,
+    "category": "Free",
+    "image": "https://img.freepik.com/free-photo/assortment-with-books-pink-background_23-2148898318.jpg?t=st=1722616964~exp=1722620564~hmac=edb97aaa4aef0737ad61556bbbd6507bd03bd5ab7fa0f10972aa08e1a1236612&w=360"
+  },
+  {
+    "id": 6,
+    "name": "MongoDB Book",
+    "title": "A JavaScript library for building user interfaces",
+    "price": 0.0,
+    "category": "paid",
+    "image": "https://img.freepik.com/free-photo/assortment-with-books-pink-background_23-2148898318.jpg?t=st=1722616964~exp=1722620564~hmac=edb97aaa4aef0737ad61556bbbd6507bd03bd5ab7fa0f10972aa08e1a1236612&w=360"
+  },
+  {
+    "id": 7,
+    "name": "Rust Book",
+    "title": "A JavaScript library for building user interfaces",
+    "price": 0.0,
+    "category": "paid",
+    "image": "https://img.freepik.com/free-photo/assortment-with-books-pink-background_23-2148898318.jpg?t=st=1722616964~exp=1722620564~hmac=edb97aaa4aef0737ad61556bbbd6507bd03bd5ab7fa0f10972aa08e1a1236612&w=360"
+  },
+  {
+    "id": 8,
+    "name": "Swift Book",
+    "title": "A JavaScript library for building user interfaces",
+    "price": 0.0,
+    "category": "Free",
+    "image": "https://img.freepik.com/free-photo/assortment-with-books-pink-background_23-2148898318.jpg?t=st=1722616964~exp=1722620564~hmac=edb97aaa4aef0737ad61556bbbd6507bd03bd5ab7fa0f10972aa08e1a1236612&w=360"
+  },
+  {
+    "id": 9,
+    "name": "Go Lang Book",
+    "title": "A JavaScript library for building user interfaces",
+    "price": 0.0,
+    "category": "paid",
+    "image": "https://img.freepik.com/free-photo/assortment-with-books-pink-background_23-2148898318.jpg?t=st=1722616964~exp=1722620564~hmac=edb97aaa4aef0737ad61556bbbd6507bd03bd5ab7fa0f10972aa08e1a1236612&w=360"
+  },
+  {
+    "id": 10,
+    "name": "Ruby Book",
+    "title": "A JavaScript library for building user interfaces",
+    "price": 0.0,
+    "category": "paid",
+    "image": "https://img.freepik.com/free-photo/assortment-with-books-pink-background_23-2148898318.jpg?t=st=1722616964~exp=1722620564~hmac=edb97aaa4aef0737ad61556bbbd6507bd03bd5ab7fa0f10972aa08e1a1236612&w=360"
+  },
+  {
+    "id": 11,
+    "name": "Linux Book",
+    "title": "A JavaScript library for building user interfaces",
+    "price": 0.0,
+    "category": "paid",
+    "image": "https://img.freepik.com/free-photo/assortment-with-books-pink-background_23-2148898318.jpg?t=st=1722616964~exp=1722620564~hmac=edb97aaa4aef0737ad61556bbbd6507bd03bd5ab7fa0f10972aa08e1a1236612&w=360"
+  },
+  {
+    "id": 12,
+    "name": "C++ Book",
+    "title": "A JavaScript library for building user interfaces",
+    "price": 0.0,
+    "category": "Free",
+    "image": "https://img.freepik.com/free-photo/assortment-with-books-pink-background_23-2148898318.jpg?t=st=1722616964~exp=1722620564~hmac=edb97aaa4aef0737ad61556bbbd6507bd03bd5ab7fa0f10972aa08e1a1236612&w=360"
+  }
+]
