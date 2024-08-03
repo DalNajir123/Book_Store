@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useEffect } from "react";
 import list from "../../public/list.json";
 import Card from "./Card";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Course() {
   console.log(list);
+  useEffect(() => {
+    AOS.init({
+      duration: 1500,
+      easing: "ease-in-out",
+      mirror: true,
+    });
+  }, []);
 
   return (
     <>
@@ -25,9 +34,11 @@ function Course() {
             Back
           </button>
         </div>
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-4 gap-5">
+        <div className="mt-8 grid grid-cols-1 md:grid-cols-4 gap-3">
           {list.map((book) => (
-            <Card key={book.id} book={book} />
+            <div className="m-0" data-aos="slide-up">
+              <Card key={book.id} book={book} />
+            </div>
           ))}
         </div>
       </div>

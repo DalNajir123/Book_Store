@@ -3,7 +3,7 @@ import React from "react";
 function Card({ book }) {
   return (
     <>
-      <div className="mt-5 mb-10">
+      <div className="mt-5 mb-0">
         <div className="card bg-base-100 w-90 shadow-lg hover:shadow-pink-400 m-2 hover:scale-105 duration-300">
           <figure>
             <img
@@ -19,7 +19,9 @@ function Card({ book }) {
             </h2>
             <p>{book.title}</p>
             <div className="card-actions justify-between">
-              <div className="badge badge-outline">${book.price}</div>
+              <div className="rounded-full border-[2px] hover:bg-pink-400 hover:text-black duration-300 cursor-pointer px-5 py-1">
+                ${book.price}
+              </div>
               <div className="rounded-full border-[2px] hover:bg-pink-400 hover:text-black duration-300 cursor-pointer px-2 py-1">
                 Buy Now
               </div>

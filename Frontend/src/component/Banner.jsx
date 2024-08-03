@@ -1,15 +1,36 @@
-import React from "react";
+import React, { useEffect } from "react";
 import banner from "../../public/banner.jpg";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { ReactTyped } from "react-typed";
 
 function Banner() {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      easing: "ease-in-out",
+      mirror: true,
+    });
+  }, []);
   return (
     <>
       <div className="flex flex-col md:flex-row gap-5 my-10">
         <div className="w-full md:w-1/2 mt-12 md:mt-32 md:order-1 order-2">
           <div className="space-y-12">
             <h1 className="text-4xl font-bold">
-              Hello, Welcome Here To Learn Something{" "}
-              <span className="text-pink-400">New Every-Day!!!</span>
+              Hello, Welcome Here To Learn Something New{" "}
+              <span className="text-4xl font-bold bg-gradient-to-r from-pink-500 to-violet-400 bg-clip-text text-transparent">
+                <ReactTyped
+                  strings={[
+                    "Every-Day . . .",
+                    "Any-Time . . .",
+                    "Any-Place . . .",
+                  ]}
+                  typeSpeed={70}
+                  backSpeed={40}
+                  loop
+                />
+              </span>
             </h1>
             <p className="text-xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
@@ -32,11 +53,12 @@ function Banner() {
           </div>
           <button className="mt-8 btn btn-secondary">Secondary</button>
         </div>
-        <div className="w-full md:w-1/2 mt-12 md:mt-32 order-1">
+        <div className="w-full md:w-1/2 mt-12 md:mt-28 order-1">
           <img
             src={banner}
             className="w-90 h-90 mix-blend-plus-darker rounded-2xl hover:shadow-xl hover:shadow-pink-300 duration-500"
             alt=""
+            data-aos="zoom-in"
           />
         </div>
       </div>
