@@ -36,10 +36,10 @@ function Login() {
     // min-h-screen
     <>
       <Navbar />
-      <div className="mt-48 mb-24 md:mt-32 flex items-center justify-center bg-base-100">
+      <div className="dark:bg-white dark:mt-16 dark:pt-24 mt-48 mb-24 md:mt-32 flex items-center justify-center bg-base-100">
         <div
           ref={formRef}
-          className="bg-slate-300 p-8 rounded-lg w-full max-w-md shadow-md shadow-pink-400 hover:shadow-xl hover:shadow-pink-300 duration-500"
+          className="dark:bg-pink-100 dark:mt-4 bg-slate-300 p-8 rounded-lg w-full max-w-md shadow-md shadow-pink-400 hover:shadow-xl hover:shadow-pink-300 duration-500"
         >
           <h2 className="text-3xl font-bold mb-6 text-center text-zinc-900">
             Login
@@ -55,7 +55,7 @@ function Login() {
                 id="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full p-2 rounded mt-1 focus:outline-none focus:ring focus:ring-pink-400 bg-zinc-800 hover:bg-zinc-700 duration-500"
+                className="dark:bg-stone-100 dark:outline-none border border-gray-300  w-full p-2 rounded mt-1 focus:outline-none focus:ring-2 focus:ring-pink-400 bg-zinc-800 hover:bg-zinc-700 duration-500"
                 required
                 placeholder="Enter Your Email"
               />
@@ -69,7 +69,7 @@ function Login() {
                 id="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full p-2  rounded mt-1 focus:outline-none focus:ring focus:ring-pink-400 bg-zinc-800 hover:bg-zinc-700 duration-500"
+                className="dark:bg-stone-100 dark:outline-none border border-gray-300 w-full p-2  rounded mt-1 focus:outline-none focus:ring-2 focus:ring-pink-400 bg-zinc-800 hover:bg-zinc-700 duration-500"
                 required
                 placeholder="Enter Your Password"
               />

@@ -5,7 +5,7 @@ function Footer() {
   return (
     <>
       <div className="">
-        <footer className="footer footer-center text-base-content rounded p-10 pb-5">
+        <footer className="dark:text-black footer footer-center text-base-content rounded p-10 pb-5">
           <hr className="border-2 w-full rounded-full border-pink-400" />
           <nav className="grid grid-flow-col gap-4">
             <Link to="/" className="hover:scale-110 duration-500">

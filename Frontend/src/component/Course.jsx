@@ -18,7 +18,7 @@ function Course() {
   return (
     <>
       <div>
-        <div className="mt-28 justify-center items-center text-center">
+        <div className="mt-28 dark:mt-16 dark:pt-12 justify-center items-center text-center dark:bg-white">
           <h1 className="text-xl md:text-4xl">
             We're Delighted to Have You{" "}
             <span className="text-pink-400">Here! :)</span>

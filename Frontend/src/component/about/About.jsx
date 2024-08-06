@@ -16,7 +16,7 @@ function About() {
     <>
       <Navbar />
 
-      <div className="bg-base-100 min-h-screen p-6 mt-32">
+      <div className="dark:bg-white dark:mt-16 dark:pt-16 bg-base-100 min-h-screen p-6 mt-32">
         <div
           className="container mx-auto max-w-4xl rounded-lg shadow-md shadow-pink-400 hover:shadow-xl hover:shadow-pink-300 duration-500"
           data-aos="fade-up "

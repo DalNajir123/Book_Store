@@ -81,7 +81,7 @@ function Banner() {
               at ab maiores perspiciatis ex voluptate, repellat amet saepe earum
               corporis?
             </p>
-            <label className="input input-bordered flex items-center gap-2">
+            <label className="dark:bg-white dark:border-2 dark:border-black input input-bordered flex items-center gap-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 16 16"
@@ -109,7 +109,7 @@ function Banner() {
       <div>
         <div
           ref={wheelRef}
-          className="rounded-full duration-1000 text-slate-600 inline-block opacity-40 shadow-md shadow-pink-400 hover:shadow-2xl"
+          className="dark:opacity-70 rounded-full duration-1000 text-slate-600 inline-block opacity-40 shadow-md shadow-pink-400 hover:shadow-2xl"
         >
           <img src={wheel1} alt="" className="w-20 h-20 md:w-48 md:h-48" />
         </div>

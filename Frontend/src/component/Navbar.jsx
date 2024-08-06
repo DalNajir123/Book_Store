@@ -63,9 +63,9 @@ function Navbar() {
   return (
     <>
       <div
-        className={`max-w-screen-2xl container mx-auto md:px-20 px-4 fixed top-0 left-0 right-0 z-50 ${
+        className={`max-w-screen-2xl container mx-auto md:px-20 px-4 dark:bg-white fixed top-0 left-0 right-0 z-50 ${
           sticky
-            ? "sticky-navbar shadow-md shadow-pink-400 bg-base-200 duration-500 transition-all ease-in-out"
+            ? "sticky-navbar shadow-md shadow-pink-400 bg-base-200 dark:bg-slate-100 duration-500 transition-all ease-in-out"
             : ""
         }`}
       >
@@ -94,7 +94,7 @@ function Navbar() {
               </div>
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+                className="dark:bg-white dark:border-2 dark:border-pink-400 menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
               >
                 {navItems}
               </ul>
@@ -110,10 +110,12 @@ function Navbar() {
               <ul className="menu-horizontal px-1 gap-5">{navItems}</ul>
             </div>
             <div className="hidden md:block">
-              <label className="px-3 py-2 border rounded-md flex items-center gap-2">
+              <label className="px-3 py-2 dark:border-2 border rounded-md flex items-center gap-2">
                 <input
                   type="text"
-                  className="grow outline-none bg-base-100"
+                  className={`grow outline-none bg-base-100 dark:bg-white ${
+                    sticky ? "dark:bg-slate-100 bg-base-200" : ""
+                  }`}
                   placeholder="Search For Books"
                 />
                 <svg
@@ -161,7 +163,7 @@ function Navbar() {
             <div className="">
               <Link
                 to="/login"
-                className="bg-white text-black rounded-md hover:bg-pink-400 duration-300 px-4 py-2 cursor-pointer"
+                className="bg-white text-black rounded-md hover:bg-pink-400 duration-300 px-4 py-2 cursor-pointer dark:shadow-md"
               >
                 Login
               </Link>
