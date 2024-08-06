@@ -1,16 +1,25 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
     <>
       <div className="">
-        <footer className="footer footer-center text-base-content rounded p-10">
+        <footer className="footer footer-center text-base-content rounded p-10 pb-5">
           <hr className="border-2 w-full rounded-full border-pink-400" />
           <nav className="grid grid-flow-col gap-4">
-            <a className="link link-hover">About us</a>
-            <a className="link link-hover">Contact</a>
-            <a className="link link-hover">Jobs</a>
-            <a className="link link-hover">Press kit</a>
+            <Link to="/" className="hover:scale-110 duration-500">
+              Home
+            </Link>
+            <Link to="/courses" className="hover:scale-110 duration-500">
+              Books
+            </Link>
+            <Link to="/about" className="hover:scale-110 duration-500">
+              About us
+            </Link>
+            <Link to="/contact" className="hover:scale-110 duration-500">
+              Contact
+            </Link>
           </nav>
           <nav>
             <div className="grid grid-flow-col gap-4">
@@ -52,7 +61,7 @@ function Footer() {
           <aside>
             <p>
               Copyright © {new Date().getFullYear()} - All right reserved by
-              ACME Industries Ltd
+              Book Store Industries Ltd
             </p>
           </aside>
         </footer>

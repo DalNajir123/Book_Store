@@ -1,17 +1,60 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import banner from "../../public/banner.jpg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { ReactTyped } from "react-typed";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import wheel1 from "../../public/wheel1.png";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Banner() {
+  const wheelRef = useRef(null);
+
   useEffect(() => {
+    // Initialize AOS
     AOS.init({
       duration: 2000,
       easing: "ease-in-out",
       mirror: true,
     });
+
+    // Define responsive animations using GSAP's matchMedia
+    const mm = gsap.matchMedia();
+
+    mm.add("(min-width: 430px)", () => {
+      // Animation for screens wider than 430px
+      gsap.to(wheelRef.current, {
+        x: 300,
+        rotate: 720,
+        scrollTrigger: {
+          trigger: wheelRef.current,
+          start: "top 80%",
+          end: "bottom 20%",
+          scrub: true,
+        },
+      });
+    });
+
+    mm.add("(min-width: 1200px)", () => {
+      // Animation for screens wider than 1200px
+      gsap.to(wheelRef.current, {
+        x: 1200,
+        rotate: 720,
+        scrollTrigger: {
+          trigger: wheelRef.current,
+          start: "top 80%",
+          end: "bottom 20%",
+          scrub: true,
+        },
+      });
+    });
+
+    // Clean up matchMedia listeners
+    return () => mm.revert();
   }, []);
+
   return (
     <>
       <div className="flex flex-col md:flex-row gap-5 my-10">
@@ -51,7 +94,7 @@ function Banner() {
               <input type="text" className="grow" placeholder="Email" />
             </label>
           </div>
-          <button className="mt-8 btn btn-secondary">Secondary</button>
+          <button className="mt-8 btn btn-secondary">Subscribe</button>
         </div>
         <div className="w-full md:w-1/2 mt-12 md:mt-28 order-1">
           <img
@@ -60,6 +103,15 @@ function Banner() {
             alt=""
             data-aos="zoom-in"
           />
+        </div>
+      </div>
+
+      <div>
+        <div
+          ref={wheelRef}
+          className="rounded-full duration-1000 text-slate-600 inline-block opacity-40 shadow-md shadow-pink-400 hover:shadow-2xl"
+        >
+          <img src={wheel1} alt="" className="w-20 h-20 md:w-48 md:h-48" />
         </div>
       </div>
     </>

@@ -3,6 +3,7 @@ import list from "../../public/list.json";
 import Card from "./Card";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 function Course() {
   console.log(list);
@@ -30,9 +31,11 @@ function Course() {
             doloribus quae ipsum excepturi earum illum deleniti, quis, commodi
             error sit reiciendis expedita impedit dolores?
           </p>
-          <button className="bg-pink-400 hover:bg-pink-500 hover:text-black text-white px-4 py-2 rounded-md duration-500 mt-6">
-            Back
-          </button>
+          <Link to="/">
+            <button className="bg-pink-400 hover:bg-pink-500 hover:text-black text-white px-4 py-2 rounded-md duration-500 mt-6">
+              Back
+            </button>
+          </Link>
         </div>
         <div className="mt-8 grid grid-cols-1 md:grid-cols-4 gap-3">
           {list.map((book) => (

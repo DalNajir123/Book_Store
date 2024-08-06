@@ -64,7 +64,7 @@ function Freebook() {
       <div className="">
         <Slider {...settings}>
           {freebook.map((book) => (
-            <div className="mb-8" data-aos="zoom-in">
+            <div className="mb-8 mx-2" data-aos="zoom-in">
               <Card book={book} key={book.id} />
             </div>
           ))}
