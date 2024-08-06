@@ -23,7 +23,7 @@ function About() {
         >
           <header className="bg-slate-300 shadow-md rounded-lg p-4 mb-10">
             <h1 className="text-3xl font-bold text-center text-zinc-900">
-              About Our Bookstore
+              About Our Learn Coding
             </h1>
           </header>
         </div>
@@ -36,11 +36,11 @@ function About() {
             Our Story
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            Welcome to [Your Bookstore Name], where every book tells a story and
-            every reader finds a new adventure. Our journey began with a passion
-            for books and a vision to create a haven for readers of all genres.
-            We believe in the magic of storytelling and the joy of discovering
-            new worlds through the pages of a book.
+            Welcome to Learn Coding, where every book tells a story and every
+            reader finds a new adventure. Our journey began with a passion for
+            books and a vision to create a haven for readers of all genres. We
+            believe in the magic of storytelling and the joy of discovering new
+            worlds through the pages of a book.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
             Our bookstore is more than just a place to buy books; it's a
@@ -51,7 +51,7 @@ function About() {
           </p>
           <p className="text-gray-700 leading-relaxed">
             Join us in celebrating the love of reading and discover your next
-            great read at [Your Bookstore Name].
+            great read at Learn Coding.
           </p>
         </section>
 
@@ -71,7 +71,7 @@ function About() {
                 className="w-32 h-32 rounded-full mx-auto mb-4 border-2 border-zinc-900"
               />
               <h3 className="text-xl font-semibold mb-2 text-zinc-800">
-                John Doe
+                Dal Najir
               </h3>
               <p className="text-gray-300">Owner & Founder</p>
             </div>
@@ -84,7 +84,7 @@ function About() {
                 className="w-32 h-32 rounded-full mx-auto mb-4 border-2 border-zinc-900"
               />
               <h3 className="text-xl font-semibold mb-2 text-zinc-800">
-                Jane Smith
+                Bhagvani Ruvaifa
               </h3>
               <p className="text-gray-300">Store Manager</p>
             </div>
@@ -97,7 +97,7 @@ function About() {
                 className="w-32 h-32 rounded-full mx-auto mb-4 border-2 border-zinc-900"
               />
               <h3 className="text-xl font-semibold mb-2 text-zinc-800">
-                Alice Johnson
+                Shivam
               </h3>
               <p className="text-gray-300">Book Curator</p>
             </div>
@@ -118,13 +118,13 @@ function About() {
           </p>
           <ul className="list-disc list-inside text-gray-700 mb-4">
             <li>
-              <strong>Email:</strong> contact@yourbookstore.com
+              <strong>Email:</strong> dalnajir123@gmail.com
             </li>
             <li>
               <strong>Phone:</strong> +1 (234) 567-8900
             </li>
             <li>
-              <strong>Address:</strong> 123 Book Lane, Reading City, USA
+              <strong>Address:</strong> 123 Book Lane, Reading City, Ahmedabad
             </li>
           </ul>
         </section>

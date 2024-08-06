@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { gsap } from "gsap";
+import { ReactTyped } from "react-typed";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -50,29 +51,43 @@ function Login() {
               <label htmlFor="email" className="block text-gray-700">
                 Email
               </label>
-              <input
-                type="email"
-                id="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="dark:bg-stone-100 dark:outline-none border border-gray-300  w-full p-2 rounded mt-1 focus:outline-none focus:ring-2 focus:ring-pink-400 bg-zinc-800 hover:bg-zinc-700 duration-500"
-                required
-                placeholder="Enter Your Email"
-              />
+              <ReactTyped
+                strings={["Enter Your Email..."]}
+                typeSpeed={70}
+                backSpeed={40}
+                attr="placeholder"
+                loop
+              >
+                <input
+                  type="email"
+                  id="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  className="dark:bg-stone-100 dark:outline-none border border-gray-300  w-full p-2 rounded mt-1 focus:outline-none focus:ring-2 focus:ring-pink-400 bg-zinc-800 hover:bg-zinc-700 duration-500"
+                  required
+                />
+              </ReactTyped>
             </div>
             <div>
               <label htmlFor="password" className="block text-gray-700">
                 Password
               </label>
-              <input
-                type="password"
-                id="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                className="dark:bg-stone-100 dark:outline-none border border-gray-300 w-full p-2  rounded mt-1 focus:outline-none focus:ring-2 focus:ring-pink-400 bg-zinc-800 hover:bg-zinc-700 duration-500"
-                required
-                placeholder="Enter Your Password"
-              />
+              <ReactTyped
+                strings={["Enter Your Password..."]}
+                typeSpeed={70}
+                backSpeed={40}
+                attr="placeholder"
+                loop
+              >
+                <input
+                  type="password"
+                  id="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  className="dark:bg-stone-100 dark:outline-none border border-gray-300 w-full p-2  rounded mt-1 focus:outline-none focus:ring-2 focus:ring-pink-400 bg-zinc-800 hover:bg-zinc-700 duration-500"
+                  required
+                />
+              </ReactTyped>
             </div>
             <button
               type="submit"

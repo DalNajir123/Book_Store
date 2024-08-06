@@ -61,7 +61,7 @@ function Footer() {
           <aside>
             <p>
               Copyright © {new Date().getFullYear()} - All right reserved by
-              Book Store Industries Ltd
+              Learn Coding{" "}
             </p>
           </aside>
         </footer>

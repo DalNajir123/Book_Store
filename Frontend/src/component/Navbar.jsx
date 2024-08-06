@@ -100,9 +100,9 @@ function Navbar() {
               </ul>
             </div>
             <Link to="/" className=" text-2xl font-semibold cursor-pointer">
-              <span className="text-pink-500 text-3xl">B</span>
-              ook <span className="text-pink-500 text-3xl">S</span>
-              tore
+              <span className="text-pink-500 text-3xl">L</span>
+              earn <span className="text-pink-500 text-3xl">C</span>
+              oding
             </Link>
           </div>
           <div className="navbar-end space-x-4">

@@ -1,12 +1,13 @@
 import React from "react";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
+import { ReactTyped } from "react-typed";
 
 function Contact() {
   return (
     <>
       <Navbar />
-      <div className="dark:bg-white dark:mt-16 dark:pt-20 dark:mb-10 flex items-center justify-center mt-40 md:mt-32 bg-base-100">
+      <div className="dark:bg-white dark:mt-16 dark:pt-20 mb-10 flex items-center justify-center mt-40 md:mt-32 bg-base-100">
         <div className="dark:bg-pink-100 w-full max-w-md bg-slate-300 rounded-lg shadow-md shadow-pink-400 p-6 hover:shadow-xl hover:shadow-pink-400 duration-500">
           <h2 className="text-2xl font-bold mb-4 text-center text-zinc-800">
             Contact Us
@@ -19,13 +20,20 @@ function Contact() {
               >
                 Name
               </label>
-              <input
-                type="text"
-                id="name"
-                className="dark:bg-stone-50 dark:outline-none w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400 bg-zinc-800 hover:bg-zinc-700 duration-500"
-                placeholder="Your Name"
-                required
-              />
+              <ReactTyped
+                strings={["Enter Your Name..."]}
+                typeSpeed={70}
+                backSpeed={40}
+                attr="placeholder"
+                loop
+              >
+                <input
+                  type="text"
+                  id="name"
+                  className="dark:bg-stone-50 dark:outline-none w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400 bg-zinc-800 hover:bg-zinc-700 duration-500"
+                  required
+                />
+              </ReactTyped>
             </div>
             <div className="mb-4">
               <label
@@ -34,14 +42,45 @@ function Contact() {
               >
                 Email
               </label>
-              <input
-                type="email"
-                id="email"
-                className="dark:bg-stone-50 dark:outline-none w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400 bg-zinc-800 hover:bg-zinc-700 duration-500"
-                placeholder="Your Email"
-                required
-              />
+              <ReactTyped
+                strings={["Enter Your Email..."]}
+                typeSpeed={70}
+                backSpeed={40}
+                attr="placeholder"
+                loop
+              >
+                <input
+                  type="email"
+                  id="email"
+                  className="dark:bg-stone-50 dark:outline-none w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400 bg-zinc-800 hover:bg-zinc-700 duration-500"
+                  required
+                />
+              </ReactTyped>
             </div>
+
+            <div className="mb-4">
+              <label
+                htmlFor="phone"
+                className="block text-gray-700 font-bold mb-2"
+              >
+                Phone
+              </label>
+              <ReactTyped
+                strings={["Enter Your Phone Number..."]}
+                typeSpeed={70}
+                backSpeed={40}
+                attr="placeholder"
+                loop
+              >
+                <input
+                  type="text"
+                  id="phone"
+                  className="dark:bg-stone-50 dark:outline-none w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400 bg-zinc-800 hover:bg-zinc-700 duration-500"
+                  required
+                />
+              </ReactTyped>
+            </div>
+
             <div className="mb-4">
               <label
                 htmlFor="message"
@@ -49,14 +88,16 @@ function Contact() {
               >
                 Message
               </label>
+
               <textarea
                 id="message"
                 rows="4"
                 className="dark:bg-stone-50 dark:outline-none w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400 bg-zinc-800 hover:bg-zinc-700 duration-500"
-                placeholder="Your Message"
                 required
-              ></textarea>
+                placeholder="Enter your message..."
+              />
             </div>
+
             <div className="flex items-center justify-between">
               <button
                 type="submit"
