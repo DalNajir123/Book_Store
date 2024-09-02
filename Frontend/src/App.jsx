@@ -4,7 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import Courses from "./component/courses/Courses";
 import Contact from "./component/contact/Contact";
 import About from "./component/about/About";
-import Login from "./component/Login";
+import Signup from "./component/Signup";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Route path="/courses" element={<Courses />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<About />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
     </div>
   );

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import LoginTwo from "./LoginTwo";
+// import toast, { Toaster } from "react-hot-toast";
 
 function Navbar() {
   const [sticky, setSticky] = useState(false);
@@ -7,6 +9,9 @@ function Navbar() {
   const [theme, setTheme] = useState(
     localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
   );
+
+  // const notify = () => toast.error("Here is your toast.");
+
   const element = document.documentElement;
 
   useEffect(() => {
@@ -99,9 +104,12 @@ function Navbar() {
                 {navItems}
               </ul>
             </div>
-            <Link to="/" className=" text-2xl font-semibold cursor-pointer">
-              <span className="text-pink-500 text-3xl">L</span>
-              earn <span className="text-pink-500 text-3xl">C</span>
+            <Link
+              to="/"
+              className="text-lg md:text-2xl font-semibold cursor-pointer"
+            >
+              <span className="text-pink-500 text-xl md:text-3xl">L</span>
+              earn <span className="text-pink-500 text-xl md:text-3xl">C</span>
               oding
             </Link>
           </div>
@@ -160,14 +168,30 @@ function Navbar() {
                 <path d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
               </svg>
             </label>
-            <div className="">
+            {/* <div className="">
               <Link
                 to="/login"
                 className="bg-white text-black rounded-md hover:bg-pink-400 duration-300 px-4 py-2 cursor-pointer dark:shadow-md"
               >
                 Login
               </Link>
+            </div> */}
+            <div className="">
+              <Link
+                className="bg-white text-black rounded-md hover:bg-pink-400 duration-300 px-4 py-2 cursor-pointer dark:shadow-md"
+                onClick={() =>
+                  document.getElementById("my_modal_3").showModal()
+                }
+              >
+                Login
+              </Link>
+              <LoginTwo />
             </div>
+            {/* react hot toast test */}
+            {/* <div>
+              <button onClick={notify}>Toast</button>
+              <Toaster />
+            </div> */}
           </div>
         </div>
       </div>

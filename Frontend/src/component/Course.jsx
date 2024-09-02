@@ -1,18 +1,32 @@
-import React, { useEffect } from "react";
-import list from "../../public/list.json";
+import React, { useEffect, useState } from "react";
 import Card from "./Card";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 function Course() {
-  console.log(list);
+  const [books, setBooks] = useState([]);
   useEffect(() => {
     AOS.init({
       duration: 1500,
       easing: "ease-in-out",
       mirror: true,
     });
+  }, []);
+
+  useEffect(() => {
+    const getBooks = async () => {
+      try {
+        const response = await axios.get("http://localhost:4001/book");
+        console.log(response.data);
+        setBooks(response.data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    getBooks();
   }, []);
 
   return (
@@ -38,7 +52,7 @@ function Course() {
           </Link>
         </div>
         <div className="mt-8 grid grid-cols-1 md:grid-cols-4 gap-3">
-          {list.map((book) => (
+          {books.map((book) => (
             <div className="m-0" data-aos="slide-up">
               <Card key={book.id} book={book} />
             </div>

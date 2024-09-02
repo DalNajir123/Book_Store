@@ -23,10 +23,24 @@ function Banner() {
     // Define responsive animations using GSAP's matchMedia
     const mm = gsap.matchMedia();
 
-    mm.add("(min-width: 430px)", () => {
+    // mm.add("(min-width: 430px)", () => {
+    //   // Animation for screens wider than 430px
+    //   gsap.to(wheelRef.current, {
+    //     x: 300,
+    //     rotate: 720,
+    //     scrollTrigger: {
+    //       trigger: wheelRef.current,
+    //       start: "top 80%",
+    //       end: "bottom 20%",
+    //       scrub: true,
+    //     },
+    //   });
+    // });
+
+    mm.add("(min-width: 320px)", () => {
       // Animation for screens wider than 430px
       gsap.to(wheelRef.current, {
-        x: 300,
+        x: 250,
         rotate: 720,
         scrollTrigger: {
           trigger: wheelRef.current,
@@ -96,10 +110,10 @@ function Banner() {
           </div>
           <button className="mt-8 btn btn-secondary">Subscribe</button>
         </div>
-        <div className="w-full md:w-1/2 mt-12 md:mt-28 order-1">
+        <div className="w-full md:w-1/2 mt-12 md:mt-28 order-1 rounded-2xl hover:shadow-xl hover:shadow-pink-300 duration-500">
           <img
             src={banner}
-            className="w-90 h-90 mix-blend-plus-darker rounded-2xl hover:shadow-xl hover:shadow-pink-300 duration-500"
+            className="w-90 h-90 mix-blend-plus-darker rounded-2xl "
             alt=""
             data-aos="zoom-in"
           />

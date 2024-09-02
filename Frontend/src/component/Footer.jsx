@@ -15,7 +15,7 @@ function Footer() {
               Books
             </Link>
             <Link to="/about" className="hover:scale-110 duration-500">
-              About us
+              About
             </Link>
             <Link to="/contact" className="hover:scale-110 duration-500">
               Contact
